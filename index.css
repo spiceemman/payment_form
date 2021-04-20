@@ -1,39 +1,179 @@
-*{
+body{
+	background-color: #1e56a0;
 	margin: 0;
 	padding: 0;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	box-sizing: border-box;
+  }
+
+.wrapper{
+	  position: relative;
+	  left: 220px;
+	  top: 35px;
+	  width: 70%;
+	  height: 90vh;
+	  display: flex;
+	  flex-direction: row;
+	  justify-content: center;
+	  align-items: center;
+	  background: rgba(255,255,255);
+	  border-radius: 8px;
+  }
+
+.wrapper h2{
+	  background-image: url("https://blog.dpogroup.com/wp-content/uploads/2018/12/shutterstock_140850265-4.jpg");
+	  background-color: rgb(117, 128, 128);
+	  background-position: center;
+	  background-size: cover;
+	  width:46%;
+	  height: 90vh;
+	  font-size: 30px;
+	  position: relative;
+	  left: 0;
+	  display: flex;
+	  justify-content:center;
+	  align-items:center;
+	  color: #163172;
+	  border-top-left-radius: 8px;
+	  border-bottom-left-radius: 8px;
+  }
+
+.wrapper form {
+	  display: flex;
+	  flex-direction: column;
+	  padding-left: 30px;
+	  margin: 0;
+	  box-sizing: border-box;
+	  width: 54%
+  }
+
+.wrapper form h4{
+	  color:#163172;
+	  font-weight:800;
+	  margin: 10px 0 5px 0;
+	  text-transform: capitalize;
+  }
+
+.wrapper .input-group{
+	  display: flex;
+	  flex-direction: column;
+  }
+
+  div .input-box{
+	  position: relative;
+	  margin-top:4px;
+  }
+
+div .input-box .fa-user{
+	position: absolute;
+	left: 1.2px;
+	top: 1px;
+	color: #163172;
+	padding: 1.7px 1.7px 1.7px 8px;
+	border-radius: 2px;
+}
+
+input[type=text] {
+	width:50%;
+	height: 25px;
+	margin: 0 0 0.5em 0;
+	padding-left: 30px;
+	box-sizing: border-box;
+	border: 2px solid grey;
+	border-radius: 3px;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+}
+
+div .input-box .fa-envelope{
+	position: absolute;
+	left: 1.2px;
+	top: 1px;
+	color: #163172;
+	padding: 1.7px 1.7px 1.7px 8px;
+	border-radius: 2px;
 	box-sizing: border-box;
 }
 
-body{
-	background-color: #f5f5f5;
-	font-family:Arial, Helvetica, sans-serif;
-}
-.wrapper{
-	background-color: #fff;
-	width:500px;
-	padding: 25px;
-	margin-bottom: 20px;
-}
-
-.wrapper h2{
-	color: #7ed320;
-	background-color: #fcfcfc;
-	font-size: 24px;
-	margin: 20px;
-	padding: 10px;
-	text-align: center;
-	border: 1px dotted #333;
+  input[type=email] {
+	width:50%;
+	height: 25px;
+	margin: 0 0 0.5em 0;
+	padding-left:30px;
+	box-sizing: border-box;
+	border: 2px solid grey;
+	border-radius: 3px;
 }
 
-h4{
-	padding-bottom: 5px;
-	color: #7ed320;
+  input[type=text].dob {
+	width:50%;
+	height: 25px;
+	margin: 0 0 0.5em 0;
+	padding-left: 5px;
+	padding-right: 22px;
+	border: 2px solid grey;
+	border-radius: 3px;
+	box-sizing: border-box;
+	display: flex;
+	justify-content:center;
+	align-items: center;
 }
 
-.input-group{
-	margin-bottom:10px;
-	width: 100%;
-	/*flex-direction: row;*/
-	position: relative;
-	padding: 5px 0;
+input[type=tel] {
+	width:50%;
+	height: 25px;
+	margin: 0 0 0.5em 0;
+	padding-left: 30px;
+	border: 2px solid grey;
+	border-radius: 3px;
+	box-sizing: border-box;
+}
+
+div .input-box .fa-credit-card{
+	position: absolute;
+	left: 0;
+	top: 16px;
+	color: #163172;
+	padding: 1.7px 1.7px 1.7px 8px;
+	border-radius: 2px;
+	box-sizing: border-box;
+}
+
+input[type=tel].name {
+	width:50%;
+	height: 25px;
+	margin: 1em 0 0.5em 0;
+	border: 2px solid grey;
+	border-radius: 3px;
+}
+
+div select {
+	width: 24.5%;
+	height: 25px;
+	margin: 0 0.2em 0.5em 0;
+	border: 2px solid grey;
+	border-radius: 3px;
+	box-sizing: border-box;
+}
+
+div button{
+	display: flex;
+	justify-content: center;
+	width: 50%;
+	align-items: center;
+	height: 30px;
+	margin: 0 0 0.5em 0;
+	background-color: #163172;
+	color: #fff;
+	font-weight: 800;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+}
+
+div button:hover{
+	background-color: #40bad5;
+	color: #035aa6;
+	transition: 0.3s;
 }
